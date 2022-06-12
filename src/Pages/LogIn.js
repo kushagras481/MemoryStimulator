@@ -3,9 +3,11 @@ import React, {useState, useEffect} from 'react'
 import { View } from 'react-native'
 
 import {
-    //BackgroundDiv
-    TopBackgroundDiv,
-    BottomBackgroundDiv
+    FullView
+} from '../Styles/BaseStyles.js'
+
+import {
+    BackgroundDiv
 } from '../Styles/Pages/LogInStyles.js'
 
 function LogIn(props){
@@ -13,10 +15,9 @@ function LogIn(props){
     return(
         //<BackgroundDiv/>  
 
-        <View>
-            <TopBackgroundDiv/>
-            <BottomBackgroundDiv/>
-        </View> 
+        <FullView>
+            <BackgroundDiv/>
+        </FullView> 
         
 
     )
